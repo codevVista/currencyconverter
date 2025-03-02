@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- Amount Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/amountInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount"
+            app:boxStrokeColor="@color/purple_500"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- From Currency Spinner -->
+        <TextView
+            android:id="@+id/fromCurrencyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FROM"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:padding="16dp" />
+        <Spinner
+            android:id="@+id/fromCurrencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+        <!-- To Currency Spinner -->
+        <TextView
+            android:id="@+id/toCurrencyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TO"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:padding="16dp" />
+        <Spinner
+            android:id="@+id/toCurrencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <!-- Convert Button -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/convertButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginTop="24dp"
+            app:cornerRadius="8dp" />
+
+        <!-- Result Text -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
