@@ -22,7 +22,9 @@ An Android app that allows users to convert currencies using real-time exchange 
 
 | Home Screen | Conversion Result |
 |-------------|-------------------|
-| <img src="screenshots/home_screen.png" width="200"> | <img src="screenshots/result_screen.png" width="200"> |
+| <img src="Screenshot_20250302_002842.png" width="200"> | <img src="Screenshot_20250302_002952.png" width="200"> |
+| <img src="Screenshot_20250302_003040.png" width="200"> | <img src="Screenshot_20250302_003321.png" width="200"> |
+| <img src="Screenshot_20250302_003440.png" width="200"> | <img src="Screenshot_20250302_003559.png" width="200"> |
 
 ---
 
